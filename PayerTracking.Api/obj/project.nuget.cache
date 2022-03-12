@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "ou3tne3XcjfOgAZhyJ1M8T+trhMNp3JMV6wkPXkvkIvf9t4/FlAlF9vTTZTsw+U7gwoOjj/Ji1aEUax2yBqKnQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\TheDovaReborn\\source\\repos\\PayerTracking\\PayerTracking.Api\\PayerTracking.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\TheDovaReborn\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\TheDovaReborn\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\TheDovaReborn\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\TheDovaReborn\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\TheDovaReborn\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\TheDovaReborn\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
