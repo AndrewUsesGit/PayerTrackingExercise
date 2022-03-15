@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Rewrite;
 using PayerTracking.Library;
 using PayerTracking.Library.DataAccess;
 
@@ -8,7 +9,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    var apiDocs = $@"{AppDomain.CurrentDomain.BaseDirectory}\PayerTracking.Api.xml";
+    if (File.Exists(apiDocs))
+    {
+        c.IncludeXmlComments(apiDocs);
+    }
+});
 builder.Services.AddSingleton<IDataAccess, MemoryDataAccess>();
 builder.Services.AddTransient<Orchestrator, Orchestrator>();
 
@@ -17,14 +25,13 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.UseRewriter(new Microsoft.AspNetCore.Rewrite.RewriteOptions().AddRedirect("^/?$", "/swagger"));
+
     app.UseSwagger();
     app.UseSwaggerUI(options =>
     {
         options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
         options.RoutePrefix = string.Empty;
-
-        //var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-        //options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
     });
 }
 

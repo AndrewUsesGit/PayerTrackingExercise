@@ -17,9 +17,9 @@ namespace PayerTracking.Api.Controllers
         }
 
         /// <summary>
-        /// Adds points to a specific payer
+        /// Adds points to a specific payer.
         /// </summary>
-        /// <param name="request">Which payer to add, how many points to add, and when were they added (defaults to now if not provided)</param>
+        /// <param name="request">Which payer to add, how many points to add, and when were they added (defaults to now if not provided).</param>
         /// <returns>Whether the operation was successful.</returns>
         [HttpPut]
         [Route("add")]
@@ -49,8 +49,8 @@ namespace PayerTracking.Api.Controllers
         /// <summary>
         /// Spends a specified number of points according to preset rules.
         /// </summary>
-        /// <param name="request">How many points to spend</param>
-        /// <returns></returns>
+        /// <param name="request">How many points to spend.</param>
+        /// <returns>How many points were spent per payer.</returns>
         [HttpPut]
         [Route("spend")]
         [ProducesResponseType(typeof(List<SpendPointsResponse>), StatusCodes.Status200OK)]
@@ -77,8 +77,12 @@ namespace PayerTracking.Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Gets balance of points per payer.
+        /// </summary>
+        /// <returns>Number of points per payer.</returns>
         [HttpGet]
-        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(Dictionary<string, int>), StatusCodes.Status200OK)]
         public IActionResult GetBalances()
         {
             try
