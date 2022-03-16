@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Rewrite;
 using PayerTracking.Library;
 using PayerTracking.Library.DataAccess;
 
@@ -25,8 +24,6 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseRewriter(new Microsoft.AspNetCore.Rewrite.RewriteOptions().AddRedirect("^/?$", "/swagger"));
-
     app.UseSwagger();
     app.UseSwaggerUI(options =>
     {
