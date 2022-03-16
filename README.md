@@ -70,3 +70,5 @@ The api includes a swagger landing page that includes some documentation on the 
     This page will give you more information about what routes are available, what objects need to be sent along in requests, and what format responses will be in. 
     
     You can also make a call to the api directly from the swagger page by hitting a "Try it out" button after expanding the route you want to use.
+
+<img width="855" alt="swagger" src="https://user-images.githubusercontent.com/18430687/158512802-e719949e-2b8f-4cdf-bd58-90846e0d47e4.png">
