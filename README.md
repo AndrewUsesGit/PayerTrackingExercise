@@ -18,9 +18,10 @@ The api includes a swagger landing page that includes some documentation on the 
 
 ### Windows Detailed
 1. Download and install the latest .NET6 SDK for your CPU architecture from [Microsoft](https://dotnet.microsoft.com/en-us/download/dotnet/6.0).
-2. Download or clone this project onto your machine.
-3. Open a new command prompt window.
-4. Navigate to the folder containing the main api csproj file using 
+2. Restart your computer.
+3. Download or clone this project onto your machine.
+4. Open a new command prompt window.
+5. Navigate to the folder containing the main api csproj file using 
 
         cd your\local\path\here\PayerTrackingExerciseRootFolder\PayerTracking.Api
     
@@ -32,13 +33,14 @@ The api includes a swagger landing page that includes some documentation on the 
    
         dotnet run PayerTracking.Api.csproj
         
-6. Stop the api at any time with Ctrl+C
+6. Stop the api at any time with Ctrl+C.
 
 ### MacOS Detailed
 1. Download and install the latest .NET6 SDK for your CPU architecture from [Microsoft](https://dotnet.microsoft.com/en-us/download/dotnet/6.0).
-2. Download or clone this project onto your machine.
-3. Open a new terminal window.
-4. Navigate to the folder containing the main api csproj file using 
+2. Restart your computer.
+3. Download or clone this project onto your machine.
+4. Open a new terminal window.
+5. Navigate to the folder containing the main api csproj file using 
 
         cd your/local/path/here/PayerTrackingExerciseRootFolder/PayerTracking.Api
     
@@ -50,7 +52,7 @@ The api includes a swagger landing page that includes some documentation on the 
    
         dotnet run PayerTracking.Api.csproj
         
-6. Stop the api at any time with Ctrl+C
+6. Stop the api at any time with Ctrl+C.
 
 ## Interacting with the API
 * Once the API is built and running, it will listen by default to port 7262
